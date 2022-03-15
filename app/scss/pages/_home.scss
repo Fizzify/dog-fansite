@@ -1,0 +1,29 @@
+.home {
+  height: 450px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/images/home.jpg");
+  background-size: cover;
+  background-position: center -25em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 3rem 2rem;
+
+  .home-title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 8rem;
+    padding-top: 0.5em;
+  }
+
+  .home-subtitle {
+    padding-top: 1em;
+    color: rgb(184, 184, 184);
+    font-size: 1.5rem;
+  }
+}
