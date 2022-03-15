@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 footer {
@@ -63,6 +63,38 @@ footer {
   font-size: 1.5rem;
 }
 
+.home .dog-emoji {
+  -webkit-animation: upDown 3s infinite alternate ease-in-out;
+          animation: upDown 3s infinite alternate ease-in-out;
+  position: absolute;
+  top: 140%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.home .dog-emoji:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+@-webkit-keyframes upDown {
+  0% {
+    margin-top: 0.1em;
+  }
+  100% {
+    margin-top: -0.1em;
+  }
+}
+
+@keyframes upDown {
+  0% {
+    margin-top: 0.1em;
+  }
+  100% {
+    margin-top: -0.1em;
+  }
+}
+
 .reason {
   padding-top: 1em;
   text-align: center;
@@ -87,14 +119,14 @@ footer {
 }
 
 .reason .column-item img:hover {
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  -webkit-transform: rotate(5deg) scale(1.1);
+          transform: rotate(5deg) scale(1.1);
   opacity: 0.6;
 }
 
 .reason .column-item .column-img {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 50px;
-          box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 50px;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 50px;
 }
 
 .reason .grid {

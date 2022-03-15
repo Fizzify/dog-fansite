@@ -18,15 +18,3 @@ tl.from(
   },
   "=-1"
 );
-
-tl.from(
-  ".stagger2",
-  {
-    opacity: 0,
-    y: -50,
-    stagger: 0.3,
-    ease: Power4.easeOut,
-    duration: 2,
-  },
-  "=-1.5"
-);
